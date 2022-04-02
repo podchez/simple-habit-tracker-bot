@@ -10,13 +10,19 @@
 	</parent>
 	<groupId>com.github.podchez</groupId>
 	<artifactId>simple-habit-tracker-bot</artifactId>
-	<version>0.0.1</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<name>Simple Habit Tracker Bot</name>
 	<description>Telegram Bot for tracking your habits</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots-spring-boot-starter</artifactId>
+			<version>5.7.1</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
