@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.3.1-SNAPSHOT
+
+* SHTB-5: bugfix in Dockerfile
+
 ## 0.3.0-SNAPSHOT
 
 * SHTB-5: added deployment process to the project
