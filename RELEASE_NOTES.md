@@ -1,8 +1,12 @@
 # Release Notes
 
+## 0.3.2-SNAPSHOT
+
+* SHTB-5: bugfix-2 in deployment process
+
 ## 0.3.1-SNAPSHOT
 
-* SHTB-5: bugfix in Dockerfile
+* SHTB-5: bugfix-1 in Dockerfile
 
 ## 0.3.0-SNAPSHOT
 
