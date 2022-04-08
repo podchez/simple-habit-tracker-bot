@@ -3,8 +3,11 @@ package com.github.podchez.shtb.command;
 import com.github.podchez.shtb.bot.SimpleHabitTrackerBot;
 import com.github.podchez.shtb.service.SendBotMessageService;
 import com.github.podchez.shtb.service.SendBotMessageServiceImpl;
+import com.github.podchez.shtb.service.TelegramUserService;
+import com.github.podchez.shtb.service.TelegramUserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -16,6 +19,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 public abstract class AbstractCommandTest {
     protected SimpleHabitTrackerBot simpleHabitTrackerBot = Mockito.mock(SimpleHabitTrackerBot.class);
     protected SendBotMessageService sendBotMessageService = new SendBotMessageServiceImpl(simpleHabitTrackerBot);
+    protected TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
 
     abstract String getCommandName();
     abstract String getCommandMessage();

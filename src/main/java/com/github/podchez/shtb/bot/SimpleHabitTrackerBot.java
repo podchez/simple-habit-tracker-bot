@@ -2,6 +2,9 @@ package com.github.podchez.shtb.bot;
 
 import com.github.podchez.shtb.command.CommandContainer;
 import com.github.podchez.shtb.service.SendBotMessageServiceImpl;
+import com.github.podchez.shtb.service.TelegramUserService;
+import com.github.podchez.shtb.service.TelegramUserServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -28,8 +31,9 @@ public class SimpleHabitTrackerBot extends TelegramLongPollingBot {
 
     private final CommandContainer commandContainer;
 
-    public SimpleHabitTrackerBot() {
-        commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this));
+    @Autowired
+    public SimpleHabitTrackerBot(TelegramUserService telegramUserService) {
+        commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this), telegramUserService);
     }
 
     @Override

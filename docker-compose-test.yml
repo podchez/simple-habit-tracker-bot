@@ -1,12 +1,7 @@
-version: "3.9"
+# Use postgres/example user/password credentials
+version: '3.1'
 
 services:
-  shtb-bot:
-    depends_on:
-      - shtb-db
-    build:
-      context: .
-    restart: always
 
   shtb-db:
     image: postgres

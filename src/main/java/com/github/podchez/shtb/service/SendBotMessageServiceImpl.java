@@ -11,6 +11,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
  */
 @Service
 public class SendBotMessageServiceImpl implements SendBotMessageService {
+
     private final SimpleHabitTrackerBot simpleHabitTrackerBot;
 
     @Autowired
