@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.4.0-SNAPSHOT
+
+* added repository layer
+
 ## 0.3.2-SNAPSHOT
 
 * SHTB-5: bugfix-2 in deployment process

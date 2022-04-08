@@ -9,7 +9,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 public class NoCommand implements Command{
     private final SendBotMessageService sendBotMessageService;
 
-    public static final String NO_MESSAGE = "I support commands starting with a slash character (/).\n" +
+    public static final String NO_MESSAGE = "I only support commands starting with a slash character (/).\n" +
             "To view the list of available commands, type /help";
 
     public NoCommand(SendBotMessageService sendBotMessageService) {

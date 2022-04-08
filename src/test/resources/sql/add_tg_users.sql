@@ -1,0 +1,9 @@
+INSERT INTO tg_user(chat_id, active) VALUES ('1234561', TRUE);
+INSERT INTO tg_user(chat_id, active) VALUES ('1234562', TRUE);
+INSERT INTO tg_user(chat_id, active) VALUES ('1234563', TRUE);
+INSERT INTO tg_user(chat_id, active) VALUES ('1234564', TRUE);
+INSERT INTO tg_user(chat_id, active) VALUES ('1234565', TRUE);
+INSERT INTO tg_user(chat_id, active) VALUES ('1234566', FALSE);
+INSERT INTO tg_user(chat_id, active) VALUES ('1234567', FALSE);
+INSERT INTO tg_user(chat_id, active) VALUES ('1234568', FALSE);
+INSERT INTO tg_user(chat_id, active) VALUES ('1234569', FALSE);
