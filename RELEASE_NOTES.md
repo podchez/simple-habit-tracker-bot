@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.4.1-SNAPSHOT
+
+* bugfix-1 in maven.yml
+
 ## 0.4.0-SNAPSHOT
 
 * added repository layer
